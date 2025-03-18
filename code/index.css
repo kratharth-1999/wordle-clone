@@ -25,8 +25,9 @@ h1 {
     margin: 10px auto auto auto;
     display: grid;
     row-gap: 25px;
-    column-gap: 25px;
+    column-gap: 10px;
     width: fit-content;
+    color: white;
 }
 
 .letter-box {
@@ -86,7 +87,8 @@ h1 {
 
     100% {
         transform: scaleY(1);
-        background-color: #c5c4c4;
+        background-color: #787c7e;
+        border: none;
     }
 }
 
@@ -102,6 +104,7 @@ h1 {
     100% {
         transform: scaleY(1);
         background-color: green;
+        border: none;
     }
 }
 
@@ -117,6 +120,7 @@ h1 {
     100% {
         transform: scaleY(1);
         background-color: #b59f3b;
+        border: none;
     }
 }
 
