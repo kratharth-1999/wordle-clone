@@ -1,5 +1,5 @@
 const wordLength = 5;
-const totalRows = 5;
+const totalRows = 6;
 let currentIndex = 0;
 let currentRow = 0;
 let currentGuess = "";
@@ -156,5 +156,5 @@ main();
 
 function handlePlayClick() {
     document.getElementById("overlay").setAttribute("style", "display:none");
-    container.focus();
+    document.getElementById("letter-1").focus();
 }
