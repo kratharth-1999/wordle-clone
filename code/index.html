@@ -23,6 +23,53 @@
                 </h1>
             </div>
         </div>
+        <div class="overlay-container" id="overlay">
+            <div class="overlay-content">
+                <h1 class="overlay-header">Welcome to word masters!</h1>
+                <p>Here are the rules for playing the game:</p>
+                <ul>
+                    <li>
+                        You have 6 attempts to guess a hidden 5-letter word.
+                    </li>
+                    <li>
+                        Enter a valid 5-letter word into the game to submit your
+                        guess.
+                    </li>
+                    <li>
+                        After each guess:
+                        <ul>
+                            <li>
+                                Letters that are in the correct position will be
+                                highlighted in green.
+                            </li>
+                            <li>
+                                Letters that are in the word but in the wrong
+                                position will be highlighted in yellow.
+                            </li>
+                            <li>
+                                Letters that are not in the word will remain
+                                gray.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Use the feedback from each guess to narrow down the
+                        possible word options.
+                    </li>
+                    <li>
+                        Only valid words in the dictionary are accepted as
+                        guesses.
+                    </li>
+                    <li>The game resets with a new word every day</li>
+                </ul>
+                <p>Good luck, and happy word hunting! 🧩✨</p>
+                <div class="overlay-footer">
+                    <button class="play-button" onclick="handlePlayClick()">
+                        Play
+                    </button>
+                </div>
+            </div>
+        </div>
         <script src="index.js" async defer></script>
     </body>
 </html>

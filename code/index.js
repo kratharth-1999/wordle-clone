@@ -7,6 +7,7 @@ let wordOfTheDay = null;
 const loaderRef = document.getElementById("loader");
 const successMessageRef = document.getElementById("success-message");
 const failureMessageRef = document.getElementById("failure-message");
+const container = document.getElementById("wordle-container");
 
 async function getWordOfTheDay() {
     try {
@@ -137,7 +138,6 @@ function handleKeyPress(event) {
 
 async function main() {
     /* Makes the grid from the word length and number of rows variable */
-    const container = document.getElementById("wordle-container");
     container.setAttribute(
         "style",
         `grid-template-columns:repeat(${wordLength},1fr)`
@@ -153,3 +153,8 @@ async function main() {
 }
 
 main();
+
+function handlePlayClick() {
+    document.getElementById("overlay").setAttribute("style", "display:none");
+    container.focus();
+}
